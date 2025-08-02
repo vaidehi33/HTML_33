@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Survey Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, orange, gold);
+    margin: 0;
+    padding: 0;
+  }
+  table {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 50px auto;
+    border-spacing: 10px;
+    width: 450px;
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  label {
+    font-size: 14px;
+    color: #555;
+  }
+  input[type="text"], input[type="email"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  button {
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #e65c00;
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <table>
+    <tr>
+      <td colspan="2">
+        <h2>Survey Form</h2>
+        <p style="text-align:center; font-size:12px; color:#777;">User stories survey form</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td><label for="name">Name:</label></td>
+      <td><input type="text" id="name" name="name" value="Enter name" required></td>
+    </tr>
+
+    <tr>
+      <td><label for="email">E-mail:</label></td>
+      <td><input type="email" id="email" name="email" value="Enter E-Mail" required></td>
+    </tr>
+
+    <tr>
+      <td><label for="work-experience">Work Experience:</label></td>
+      <td><input type="number" id="work-experience" name="work-experience" value="Enter Number" required></td>
+    </tr>
+
+
+    <tr>
+      <td><label for="suggestions">Suggestions to build trusted platform:</label></td>
+      <td><textarea id="suggestions" name="suggestions" rows="3" value="Write your suggestions here..." required></textarea></td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <label>You are ready to invest in:</label><br>
+        <input type="checkbox" name="investment-options" value="Real Estate"> Real Estate<br>
+        <input type="checkbox" name="investment-options" value="Mutual Funds"> Mutual Funds<br>
+        <input type="checkbox" name="investment-options" value="Crypto Currency"> Crypto Currency<br>
+        <input type="checkbox" name="investment-options" value="Stocks & Bonds"> Stocks & Bonds
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <label>Are you ready for further contact?</label><br>
+        <input type="radio" id="yes" name="contact" value="Yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="contact" value="No">
+        <label for="no">No</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <button type="submit">Submit</button>
+      </td>
+    </tr>
+
+  </table>
+</form>
+
+</body>
+</html>
