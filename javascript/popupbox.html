@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>JavaScript Pop-ups</title>
+</head>
+<body>
+
+  <button onclick="alert('This is an alert box!')">Show Alert</button>
+  
+  <button onclick="if (confirm('Are you sure you want to delete?')) { alert('Item deleted.'); } else { alert('Action canceled.'); }">Show Confirm</button>
+  
+  <button onclick="let name = prompt('Enter your name:'); if (name) { alert('Welcome, ' + name + '!'); } else { alert('No name entered.'); }">Show Prompt</button>
+
+</body>
+</html>

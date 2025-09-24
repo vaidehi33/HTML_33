@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>JavaScript Date Example</title>
+</head>
+<body>
+
+  <h1>JavaScript Dates</h1>
+  <h2>Time-Based Greeting</h2>
+  
+  <p id="greeting"></p>
+
+  <script>
+    // Get the current hour
+    var hour = new Date().getHours();
+    
+    // Display a greeting based on the time
+    if (hour >= 8 && hour <= 12) {
+      document.getElementById("greeting").innerHTML = "Good Morning";
+    } else if (hour > 12 && hour <= 16) {
+      document.getElementById("greeting").innerHTML = "Good Afternoon";
+    } else if (hour > 16 && hour <= 19) {
+      document.getElementById("greeting").innerHTML = "Good Evening";
+    } else {
+      document.getElementById("greeting").innerHTML = "Good Night";
+    }
+  </script>
+
+</body>
+</html>
