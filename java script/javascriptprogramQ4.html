@@ -1,0 +1,28 @@
+<html>
+<head>
+<head>
+<h4>Q4. Write a JavaScript program to calculate the temperature (convert Celsius to 
+Fahrenheit). Make sure the user can enter any number and convert the number 
+into Fahrenheit, using the following formula: x = y * 1.8 + 32 where “x” is the 
+value in Fahrenheit and “y” is the value in Celsius (the value that user will input is 
+assigned to y). </h4>
+  <title>Celsius to Fahrenheit</title>
+</head>
+<body>
+  <label>Enter Temperature in Celsius:</label>
+  <input type="text" id="celsius"><br><br>
+
+  <button onclick="convertTemp()">Convert</button><br><br>
+
+  <label>Fahrenheit = </label>
+  <span id="fahrenheitResult"></span>
+
+  <script>
+    function convertTemp() {
+      var y = parseFloat(document.getElementById("celsius").value);
+      var x = y * 1.8 + 32;
+      document.getElementById("fahrenheitResult").textContent = x;
+    }
+  </script>
+</body>
+</html>

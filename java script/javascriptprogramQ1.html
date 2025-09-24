@@ -1,0 +1,27 @@
+<html>
+<head>
+     <h3>Q1. Write a JavaScript program to add two numbers.</h3> 
+  <title>Add Two Numbers</title>
+</head>
+<body>
+  <label>Enter the First Number:</label>
+  <input type="text" id="num1"><br><br>
+
+  <label>Enter the Second Number:</label>
+  <input type="text" id="num2"><br><br>
+
+  <button onclick="addNumbers()">ADD</button><br><br>
+
+  <label>Sum = </label>
+  <span id="result"></span>
+
+  <script>
+    function addNumbers() {
+      var a = parseFloat(document.getElementById("num1").value);
+      var b = parseFloat(document.getElementById("num2").value);
+      var sum = a + b;
+      document.getElementById("result").textContent = sum;
+    }
+  </script>
+</body>
+</html>

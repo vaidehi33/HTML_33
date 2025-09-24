@@ -1,0 +1,27 @@
+<html>
+<head>
+    <h3>Q3. Write a JavaScript program to calculate the area of the triangle. </h3>
+  <title>Triangle Area</title>
+</head>
+<body>
+  <label>Enter Base:</label>
+  <input type="text" id="base"><br><br>
+
+  <label>Enter Height:</label>
+  <input type="text" id="height"><br><br>
+
+  <button onclick="calculateArea()">Calculate Area</button><br><br>
+
+  <label>Area = </label>
+  <span id="areaResult"></span>
+
+  <script>
+    function calculateArea() {
+      var base = parseFloat(document.getElementById("base").value);
+      var height = parseFloat(document.getElementById("height").value);
+      var area = 0.5 * base * height;
+      document.getElementById("areaResult").textContent = area;
+    }
+  </script>
+</body>
+</html>
